@@ -4,7 +4,6 @@ $(function () {
     menuSliding();
     utils();
     map();
-    demo();
 
 });
 

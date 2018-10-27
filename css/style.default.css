@@ -923,15 +923,16 @@ FOOTER AND COPYRIGHT
   margin-bottom: 2px;
 }
 .footer__block ul a:hover {
-  color: #4d4d4d;
+  color: #252525;
   text-decoration: none;
 }
 .footer__block p {
-  color: #999999;
+  color: #363434;
 }
 .footer__block p a {
   color: #999999;
 }
+
 @media (min-width: 992px) {
   .footer__block .row {
     margin-bottom: 40px;
