@@ -436,6 +436,7 @@ p.social.social--big i {
   text-align: center;
   background: url('../img/jumbotron2.jpg') center center no-repeat;
   background-size: cover;
+  background-position: 30% 50%;
 }
 .main-jumbotron .content {
   position: relative;
