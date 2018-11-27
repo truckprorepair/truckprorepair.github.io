@@ -1,0 +1,9 @@
+#ignore my vs code settings file
+.vscode
+#ignore my pinegrow file
+pinegrow.json
+#ignore my jetbrains files
+.idea
+#ignore any kind of vs code 
+.vs
+
