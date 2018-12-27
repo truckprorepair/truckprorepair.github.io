@@ -853,7 +853,7 @@ FOOTER AND COPYRIGHT
 
 @media (min-width: 992px) {
   .footer__block .row {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 }
 .footer__block p.social {
@@ -891,36 +891,7 @@ FOOTER AND COPYRIGHT
     text-align: center !important;
   }
 }
-/*
 
-=====================
-STYLE SWITCHER FOR DEMO
-=====================
-
-*/
-#style-switch-button {
-  position: fixed;
-  top: 120px;
-  left: 0;
-  border-radius: 0;
-  z-index: 2;
-}
-#style-switch {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 300px;
-  padding: 20px;
-  position: fixed;
-  top: 160px;
-  left: 0;
-  background: #fff;
-  border: solid 1px #eeeeee;
-  z-index: 2000;
-}
-#style-switch h4 {
-  color: #555555;
-}
 /* ========================================= */
 /* THEMING OF BOOTSTRAP COMPONENTS           */
 /* ========================================= */
@@ -1795,4 +1766,7 @@ a.list-group-item.active > .badge,
 }
 .nav-pills > li > a > .badge {
   margin-left: 3px;
+}
+.winterPm {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
