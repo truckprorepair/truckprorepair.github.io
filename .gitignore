@@ -1,9 +1,21 @@
 #ignore my vs code settings file
 .vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
 #ignore my pinegrow file
 pinegrow.json
 #ignore my jetbrains files
 .idea
 #ignore any kind of vs code 
 .vs
-
+# Any IDE'settings
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
