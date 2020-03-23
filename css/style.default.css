@@ -103,13 +103,13 @@ section.section--no-padding {
 }
 .italic {
   font-style: italic;
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
 .heading {
   margin-bottom: 20px;
 }
 .heading:after {
-  content: " ";
+  content: ' ';
   display: block;
   width: 40px;
   height: 1px;
@@ -352,7 +352,7 @@ fieldset[disabled] .btn-white.active {
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   text-align: center;
-  background: url("../img/jumbotron2.jpg") no-repeat 30% 50%;
+  background: url('../img/jumbotron2.jpg') no-repeat 30% 50%;
   background-size: cover;
 }
 .main-jumbotron .content {
@@ -371,7 +371,7 @@ fieldset[disabled] .btn-white.active {
 .main-jumbotron:before {
   display: block;
   position: absolute;
-  content: " ";
+  content: ' ';
   background: #000;
   opacity: 0.2;
   width: 100%;
@@ -384,7 +384,7 @@ fieldset[disabled] .btn-white.active {
 }
 /* breadcrumbs */
 .breadcrumb {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: left;
@@ -629,7 +629,7 @@ fieldset[disabled] .btn-white.active {
 }
 .box .box-header:before,
 .box .box-header:after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 .box .box-header:after {
@@ -643,7 +643,7 @@ fieldset[disabled] .btn-white.active {
 }
 .box .box-footer:before,
 .box .box-footer:after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 .box .box-footer:after {
@@ -668,7 +668,7 @@ SERVICES / INTEGRATIONS
   color: #999999;
 }
 .author-date-top {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #999999;
@@ -685,7 +685,7 @@ SERVICES / INTEGRATIONS
   color: #000;
 }
 .post .author-category {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #999999;
@@ -700,7 +700,7 @@ SERVICES / INTEGRATIONS
   color: #2b90d9;
 }
 .post .date-comments {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #999999;
@@ -768,7 +768,7 @@ SERVICES / INTEGRATIONS
 }
 .blog-post .comment:before,
 .blog-post .comment:after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 .blog-post .comment:after {
@@ -779,7 +779,7 @@ SERVICES / INTEGRATIONS
   font-size: 12px;
 }
 .blog-post .comment .reply {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 .blog-post .comment.last {
   margin-bottom: 0;
@@ -794,7 +794,7 @@ SERVICES / INTEGRATIONS
 .blog-post .comment-form:before,
 .blog-post .comments:after,
 .blog-post .comment-form:after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 .blog-post .comments:after,
@@ -865,7 +865,7 @@ FOOTER AND COPYRIGHT
   padding: 15px 0;
   font-size: 12px;
   line-height: 28px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 .footer__copyright p {
   margin: 0;
@@ -884,7 +884,7 @@ FOOTER AND COPYRIGHT
   color: #ccc;
 }
 .footer__copyright p.credit a:hover {
-  border-bottom-color: #ccc;
+  text-decoration: none;
 }
 @media (max-width: 991px) {
   .footer__copyright p.credit {
@@ -968,7 +968,7 @@ FOOTER AND COPYRIGHT
 }
 /* navbar */
 .navbar {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   min-height: 60px;
   margin-bottom: 0;
   border-top: none;
@@ -1218,6 +1218,40 @@ FOOTER AND COPYRIGHT
 .navbar-default .navbar-link:hover {
   color: #2b90d9;
 }
+
+.focus-in-contract {
+  -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
 /* Dropdowns */
 .dropdown-menu {
   z-index: 1000;
@@ -1255,7 +1289,7 @@ FOOTER AND COPYRIGHT
 }
 /* scaffolding */
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.55;
   color: #000000;
@@ -1268,8 +1302,6 @@ a {
 a:hover,
 a:focus {
   color: #555555;
-  border-bottom: solid 1px #000;
-  text-decoration: none;
 }
 a:focus {
   outline: thin dotted;
@@ -1292,7 +1324,7 @@ hr {
   border-radius: 0;
 }
 .breadcrumb > li + li:before {
-  content: "/\00a0";
+  content: '/\00a0';
   color: #cccccc;
 }
 .breadcrumb > .active {
@@ -1309,7 +1341,7 @@ hr {
 /* buttons  */
 .btn {
   font-weight: 700;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 6px 12px;
@@ -1438,7 +1470,7 @@ fieldset[disabled] .btn-transparent.active {
 }
 /* labels */
 .label {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -1490,7 +1522,7 @@ label {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 12px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .pager li {
@@ -1519,7 +1551,7 @@ label {
 /* pagination */
 .pagination {
   margin: 21px 0;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   border-radius: 0;
 }
 .pagination > li > a,
@@ -1605,7 +1637,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: #000000;
@@ -1702,7 +1734,7 @@ blockquote .small {
 blockquote footer:before,
 blockquote small:before,
 blockquote .small:before {
-  content: "\2014 \00A0";
+  content: '\2014 \00A0';
 }
 .blockquote-reverse,
 blockquote.pull-right {
@@ -1770,7 +1802,7 @@ a.list-group-item.active > .badge,
   margin-left: 3px;
 }
 .winterPm {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
 #phoneNumber {
@@ -1784,4 +1816,20 @@ a.list-group-item.active > .badge,
 #designCredit:hover {
   border-bottom: #333;
   color: #ccc;
+}
+
+.copy-link:hover {
+  color: #2b90d9 !important;
+}
+
+.covid-announce {
+  margin-top: 20px;
+}
+
+.covid-title {
+  color: red;
+}
+
+.covid-text {
+  font-size: 1.25em;
 }
