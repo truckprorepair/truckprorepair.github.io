@@ -665,7 +665,7 @@ SERVICES / INTEGRATIONS
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 20px;
-  color: #999999;
+  color: #393838;
 }
 .author-date-top {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -1688,7 +1688,7 @@ p {
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 21px;
+    font-size: 18px;
   }
 }
 .text-small {
@@ -1803,6 +1803,7 @@ a.list-group-item.active > .badge,
 }
 .winterPm {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
 }
 
 #phoneNumber {
@@ -1830,6 +1831,12 @@ a.list-group-item.active > .badge,
   color: red;
 }
 
-.covid-text {
-  font-size: 1.25em;
+.winter-pic {
+  margin-top: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .winter-pic {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
