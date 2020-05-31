@@ -75,7 +75,7 @@ function map() {
           elementType: 'geometry',
           stylers: [
             {
-              color: '#d0f5c4',
+              color: '#ebf2e6',
             },
           ],
         },
