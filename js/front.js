@@ -440,3 +440,9 @@ $(window).resize(function () {
     windowWidth = newWindowWidth;
   }
 });
+
+(function copyYear() {
+  let getYear = new Date().getFullYear();
+  let copyYearHTML = document.getElementById('copy-year');
+  copyYearHTML.textContent = getYear + ' ';
+})();
