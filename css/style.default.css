@@ -1841,6 +1841,10 @@ a.list-group-item.active > .badge,
   }
 }
 
+.fa-star {
+  color: gold;
+}
+
 /* .submit-button {
   margin-top: 15px;
 } */
