@@ -23,35 +23,41 @@ function lightbox() {
 function map() {
   if ($('#map').length > 0) {
     function initMap() {
-      var location = new google.maps.LatLng(41.713556, -74.726686);
+      const location = new google.maps.LatLng(41.713556, -74.726686);
 
-      var mapCanvas = document.getElementById('map');
-      var mapOptions = {
+      const mapCanvas = document.getElementById('map');
+      const mapOptions = {
         center: location,
         zoom: 16,
         panControl: false,
         scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
       };
-      var map = new google.maps.Map(mapCanvas, mapOptions);
+      let map = new google.maps.Map(mapCanvas, mapOptions);
 
-      var markerImage = '/img/marker_red.png';
+      const markerImage = '/img/marker_red.png';
 
-      var marker = new google.maps.Marker({
+      const marker = new google.maps.Marker({
         position: { lat: 41.713556, lng: -74.726686 },
         map: map,
         icon: markerImage,
       });
+      let shopAddress = {
+        name: 'Truck Pro',
+        street: '895 Old Route 17',
+        city: 'Harris, NY 12742',
+      };
+      let contentString = `
+      <div class="info-window">
+        <h3>${shopAddress.name}</h3>
+        <div class="info-content">
+          <p>${shopAddress.street}<br /></p>
+          <p>${shopAddress.city}</p>
+        </div>
+      </div>
+      `;
 
-      var contentString =
-        '<div class="info-window">' +
-        '<h3>Truck Pro</h3>' +
-        '<div class="info-content">' +
-        '<p>895 Old Route 17<br />Harris, NY 12742</p>' +
-        '</div>' +
-        '</div>';
-
-      var infowindow = new google.maps.InfoWindow({
+      let infowindow = new google.maps.InfoWindow({
         content: contentString,
         maxWidth: 400,
       });
@@ -60,7 +66,7 @@ function map() {
         infowindow.open(map, marker);
       });
 
-      var styles = [
+      let styles = [
         {
           featureType: 'landscape.man_made',
           elementType: 'geometry',
@@ -200,13 +206,11 @@ function map() {
 
       map.set('styles', styles);
     }
-
     google.maps.event.addDomListener(window, 'load', initMap);
   }
 }
 
 /* menu sliding */
-
 function menuSliding() {
   $('.dropdown').on('show.bs.dropdown', function (e) {
     if ($(window).width() > 750) {
@@ -225,7 +229,6 @@ function menuSliding() {
 }
 
 /* animations */
-
 function animations() {
   delayTime = 0;
   $('[data-animate]').css({ opacity: '0' });
@@ -287,7 +290,6 @@ function animationsSlider() {
 }
 
 /* counters */
-
 function counters() {
   $('.counter').counterUp({
     delay: 10,
@@ -297,11 +299,8 @@ function counters() {
 
 function utils() {
   /* tooltips */
-
   $('[data-toggle="tooltip"]').tooltip();
-
   /* click on the box activates the radio */
-
   $('#checkout').on(
     'click',
     '.box.shipping-method, .box.payment-method',
@@ -350,7 +349,6 @@ function utils() {
 }
 
 /* product detail gallery */
-
 function productDetailGallery(confDetailSwitch) {
   $('.thumb:first').addClass('active');
   timer = setInterval(autoSwitch, confDetailSwitch);
@@ -388,7 +386,6 @@ function productDetailGallery(confDetailSwitch) {
 }
 
 /* product detail sizes */
-
 function productDetailSizes() {
   $('.sizes a').click(function (e) {
     e.preventDefault();
