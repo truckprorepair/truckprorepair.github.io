@@ -1853,6 +1853,10 @@ a.list-group-item.active > .badge,
   color: gold;
 }
 
-/* .submit-button {
-  margin-top: 15px;
-} */
+.isRequired {
+  color: red;
+}
+
+.on-its-way {
+  max-height: 600px;
+}
