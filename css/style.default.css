@@ -850,6 +850,11 @@ FOOTER AND COPYRIGHT
 .footer__block p a {
   color: #999999;
 }
+.facebook__footer {
+  display: block;
+  margin: auto;
+  max-height: 32px;
+}
 
 @media (min-width: 992px) {
   .footer__block .row {
