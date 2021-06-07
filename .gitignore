@@ -19,3 +19,6 @@ pinegrow.json
 .c9/
 *.launch
 .settings/
+
+# Mac
+.DS_Store
